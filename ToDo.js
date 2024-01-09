@@ -2,7 +2,7 @@ const input=document.querySelector("#in");
 const list=document.querySelector("#list");
 let addTask=()=>{
     if(input.value==''){
-        alert("You must do Something!!");
+        alert("You must do Something Today!!");
     }
     else{
         let li=document.createElement("li");
