@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    overflow: hidden;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    background:linear-gradient(rgb(96, 138, 255),rgb(154, 210, 225));
+    padding: 10px;
+    overflow: hidden;
+}
+.todo{
+    width:540px;
+    background-color: aliceblue;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px rgb(101, 100, 100);
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aqua;
+    padding-left: 20px;
+    margin-bottom:25px;
+    margin-top: 10px;
+    border-radius: 30px;
+    box-shadow: 4x 0px 16px rgba(120, 120, 120, 0.84);
+}
+h2{
+    font-weight: bold;
+    font-size: 2rem;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+input::placeholder{
+    color: rgb(26, 1, 42);
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background-color: darkorchid;
+    color: aliceblue;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 40px;
+    box-shadow: 4px 4px 16px rgba(76, 75, 75, 0.864);
+    text-align: center;
+}
+button:active{
+    box-shadow: none;
+    transform: translateY(-5%);
+
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select:none;
+    cursor: pointer;
+    position: relative;
+    
+}
+ul li::before{
+    content: '';
+    position:absolute;
+    height: 28px;
+    width: 28px;
+    border-radius:50%;
+    background-image: url(./uncheck.png);
+    background-size: cover;
+    background-position: center;
+    top:12px;
+    left: 8px;
+    
+}
+.checked{
+    color:#555;
+    text-decoration: line-through;
+}
+.checked::before{
+    background-image: url(./9437972.png);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top:5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+   background: #edeef0;
+}
+@media  screen and (max-width:650px) {
+    
+    .todo{
+        width:454px;
+    }
+}
+@media screen and (max-width:555px){
+    .todo{
+        width:335px;
+        padding-right: 15px;
+    }
+    .search{
+        width: 300px;
+    }
+    button{
+        text-align: center;
+    }
+    input::placeholder{
+        font-size: 12px;
+    }
+  
+
+}
