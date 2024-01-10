@@ -4,9 +4,6 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
-body{
-    overflow: hidden;
-}
 .main{
     width: 100%;
     min-height: 100vh;
@@ -117,7 +114,6 @@ ul li span:hover{
 @media screen and (max-width:555px){
     .todo{
         width:335px;
-        padding-right: 15px;
     }
     .search{
         width: 300px;
@@ -131,3 +127,9 @@ ul li span:hover{
   
 
 }
+@media screen and (max-width:450px)
+{
+    .todo{
+        width:225px;
+    }
+        
