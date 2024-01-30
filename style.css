@@ -13,7 +13,7 @@
 }
 .todo{
     width:540px;
-    background-color: black;
+    background-color: white;
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
     border-radius: 20px;
@@ -23,7 +23,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: dark grey;
+    background-color: aqua;
     padding-left: 20px;
     margin-bottom:25px;
     margin-top: 10px;
