@@ -88,7 +88,7 @@ ul li::before{
     text-decoration: line-through;
 }
 .checked::before{
-    background-image: url(./9437972.png);
+    background-image: url(./check.png);
 }
 ul li span{
     position: absolute;
